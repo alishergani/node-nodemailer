@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>node nodemailer</title>
+	<style>
+		form {
+			width: 200px;
+			margin: 20px auto;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			-ms-align-items: center;
+			align-items: center;
+			-webkit-flex-direction: column;
+			-moz-flex-direction: column;
+			-ms-flex-direction: column;
+			-o-flex-direction: column;
+			flex-direction: column;
+		}
+		form input,
+		form textarea{
+			border: none;
+			border: 1px solid #000;
+			border-radius: 4px;
+			padding: 10px;
+			margin-top: 10px;
+			width: 100%;
+		}
+		form button {
+			width: 100%;
+			background-color: transparent;
+			border: none;
+			border: 2px solid #444;
+			text-transform: uppercase;
+			border-radius: 4px;
+			padding: 5px 25px;
+			margin-top: 10px;
+			cursor: pointer;
+			-webkit-transition: .2s;
+			-o-transition: .2s;
+			transition: .2s;
+		}
+		form button:hover {
+			background-color: #000;
+			color: #fff;
+			border-color: #444;
+		}
+	</style>
+</head>
+<body>
+
+	<form action="/send" method="POST">
+		<input type="email" name="user" placeholder="send to ...">
+		<textarea name="message" id="message" placeholder="text ..."></textarea>
+		<button type="submit">send form</button>
+	</form>
+	
+</body>
+</html>
